@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="login">
+    <form [formGroup]="form">
+      <img src="../../../assets/user.png" class="ancho">
+
+      <mat-form-field appearance="fill">
+        <mat-label>Nombre</mat-label>
+        <input formControlName="nombre" matInput>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input formControlName="password" matInput>
+      </mat-form-field>
+
+      <button class="btn btn-primary" (click)="loginUsuario()">Iniciar Secion</button>
+    </form>
+  </div>
+</div>
